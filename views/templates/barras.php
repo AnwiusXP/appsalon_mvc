@@ -4,7 +4,7 @@
     <a class="boton" href="/logout">Cerrar Sesion</a>
 </div>
 
-<?php if (isset($_SESSION['admin'])) { ?>
+<?php if (isset($_SESSION['admin']) || $admin === true) { ?>
     <div class="barra-servicios">
         <a class="boton" href="/admin">Ver Citas</a>
         <a class="boton" href="/servicios">Ver servicios</a>

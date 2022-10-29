@@ -1,4 +1,4 @@
-<?php $cita = true; ?>
+<?php $admin = true; ?>
 <h1 class="nombre-pagina">Panel de Administracion</h1>
 
 <?php include_once __DIR__ . '/../templates/barras.php'; ?>
