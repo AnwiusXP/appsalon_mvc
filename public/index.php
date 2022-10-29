@@ -12,19 +12,19 @@ use Controllers\ServicioController;
 $router = new Router();
 
 // Iniciar sesion
-$router->get('/', [loginController::class, 'login']);
-$router->post('/', [loginController::class, 'login']);
-$router->get('/logout', [loginController::class, 'logout']);
+$router->get('/', [LoginController::class, 'login']);
+$router->post('/', [LoginController::class, 'login']);
+$router->get('/logout', [LoginController::class, 'logout']);
 
 // recuperar password
-$router->get('/olvide', [loginController::class, 'olvide']);
-$router->post('/olvide', [loginController::class, 'olvide']);
-$router->get('/recuperar', [loginController::class, 'recuperar']);
-$router->post('/recuperar', [loginController::class, 'recuperar']);
+$router->get('/olvide', [LoginController::class, 'olvide']);
+$router->post('/olvide', [LoginController::class, 'olvide']);
+$router->get('/recuperar', [LoginController::class, 'recuperar']);
+$router->post('/recuperar', [LoginController::class, 'recuperar']);
 
 // crear cuenta
-$router->get('/crear-cuenta', [loginController::class, 'crear']);
-$router->post('/crear-cuenta', [loginController::class, 'crear']);
+$router->get('/crear-cuenta', [LoginController::class, 'crear']);
+$router->post('/crear-cuenta', [LoginController::class, 'crear']);
 
 // confirmar cuenta
 $router->get('/confirmar-cuenta', [LoginController::class, 'confirmar']);
