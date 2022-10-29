@@ -3,11 +3,11 @@
 require_once __DIR__ . '/../includes/app.php';
 
 use Controllers\AdminController;
-use Controllers\ApiController;
-use MVC\Router;
+use Controllers\APIController;
 use Controllers\CitaController;
 use Controllers\LoginController;
 use Controllers\ServicioController;
+use MVC\Router;
 
 $router = new Router();
 
@@ -28,7 +28,6 @@ $router->post('/crear-cuenta', [LoginController::class, 'crear']);
 
 // confirmar cuenta
 $router->get('/confirmar-cuenta', [LoginController::class, 'confirmar']);
-
 $router->get('/mensaje', [LoginController::class, 'mensaje']);
 
 // area privada
