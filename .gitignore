@@ -6,5 +6,5 @@ gulpfile.js
 package.json
 package-lock.json
 .DS_Store
-incliudes/.env
+.env
 data_base.txt
