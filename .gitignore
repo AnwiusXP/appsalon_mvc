@@ -2,9 +2,9 @@ src/
 vendor/
 node_modules/
 appsalon_mvc.sql
-.DS_Store
-.env
 gulpfile.js
 package.json
 package-lock.json
+.DS_Store
+.env
 data_base.txt
